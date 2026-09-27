@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POND FOOTBALL | Football Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><span>⚽</span> POND FOOTBALL</a>
+  <nav>
+    <a class="active" href="index.html">หน้าแรก</a>
+    <a href="explore.html">เลือกสินค้า</a>
+    <a href="graph.html">Football Graph</a>
+    <a href="cart.html">ตะกร้า <b id="cartCount">0</b></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">MODERN FOOTBALL STORE</p>
+    <h1>Everything<br><em>Football.</em></h1>
+    <p class="hero-text">รวมเสื้อบอล รองเท้าฟุตบอล ลูกฟุตบอล และอุปกรณ์สำหรับคนรักฟุตบอลไว้ในที่เดียว</p>
+    <a class="btn" href="explore.html">เลือกซื้อสินค้า <span>→</span></a>
+  </div>
+  <div class="hero-ball">⚽</div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">SHOP BY CATEGORY</p><h2>สินค้าฟุตบอล</h2></div>
+    <a href="explore.html">ดูทั้งหมด →</a>
+  </div>
+  <div class="category-grid">
+    <a class="category c1" href="explore.html?cat=jersey"><span>👕</span><strong>เสื้อฟุตบอล</strong><small>Jerseys</small></a>
+    <a class="category c2" href="explore.html?cat=boots"><span>👟</span><strong>รองเท้าฟุตบอล</strong><small>Football Boots</small></a>
+    <a class="category c3" href="explore.html?cat=ball"><span>⚽</span><strong>ลูกฟุตบอล</strong><small>Football Balls</small></a>
+    <a class="category c4" href="explore.html?cat=gear"><span>🧤</span><strong>อุปกรณ์ฟุตบอล</strong><small>Football Gear</small></a>
+  </div>
+</section>
+
+<section class="section dark-panel">
+  <div class="section-head"><div><p class="eyebrow">FEATURED</p><h2>สินค้าแนะนำ</h2></div></div>
+  <div id="featured" class="product-grid"></div>
+</section>
+</main>
+
+<footer>© 2026 POND FOOTBALL — Interactive Web Application</footer>
+<script src="app.js"></script>
+</body>
+</html>

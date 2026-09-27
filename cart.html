@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ตะกร้าสินค้า | POND FOOTBALL</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav"><a class="brand" href="index.html"><span>⚽</span> POND FOOTBALL</a><nav>
+<a href="index.html">หน้าแรก</a><a href="explore.html">เลือกสินค้า</a><a href="graph.html">Football Graph</a><a class="active" href="cart.html">ตะกร้า <b id="cartCount">0</b></a></nav></header>
+<main class="page">
+<section class="page-title"><p class="eyebrow">CHECKOUT</p><h1>ตะกร้าสินค้า</h1><p>หน้าสรุปคำสั่งซื้อสำหรับการสาธิต Interactive Web Application</p></section>
+<div class="cart-layout"><div id="cartItems" class="cart-items"></div><aside class="summary"><h2>Order Summary</h2><div class="sum-row"><span>จำนวนสินค้า</span><b id="sumQty">0</b></div><div class="sum-row total"><span>ยอดรวม</span><b id="sumTotal">฿0</b></div><button class="btn full" onclick="checkout()">ยืนยันคำสั่งซื้อ</button><button class="text-btn" onclick="clearCart()">ล้างตะกร้า</button></aside></div>
+</main><footer>Demo checkout — ไม่มีการชำระเงินจริง</footer>
+<script src="app.js"></script><script>initCart();</script>
+</body></html>

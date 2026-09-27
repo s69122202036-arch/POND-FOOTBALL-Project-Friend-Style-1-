@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Football Graph | POND FOOTBALL</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav"><a class="brand" href="index.html"><span>⚽</span> POND FOOTBALL</a><nav>
+<a href="index.html">หน้าแรก</a><a href="explore.html">เลือกสินค้า</a><a class="active" href="graph.html">Football Graph</a><a href="cart.html">ตะกร้า <b id="cartCount">0</b></a></nav></header>
+
+<main class="page">
+<section class="page-title">
+<p class="eyebrow">GRAPH THEORY • INTERACTIVE</p>
+<h1>Football Product Graph</h1>
+<p>แผนภาพความสัมพันธ์ของหมวดสินค้าฟุตบอล — คลิกหรือเลือกจุดเริ่มต้นและปลายทางเพื่อดู Path</p>
+</section>
+
+<div class="graph-layout graph-modern">
+  <div class="graph-card graph-visual">
+    <div class="graph-topbar">
+      <div><span class="live-dot"></span> Interactive Graph</div>
+      <div class="graph-stats"><span><b>8</b> Vertex</span><span><b>12</b> Edge</span></div>
+    </div>
+    <div class="canvas-wrap"><canvas id="graphCanvas"></canvas></div>
+    <div class="graph-hint">ลาก Vertex เพื่อจัดตำแหน่ง • คลิก Vertex เพื่อเลือกเป็นต้นทาง</div>
+  </div>
+
+  <div class="control-card graph-control">
+    <div class="control-title"><span class="control-icon">⌁</span><div><h2>Path Finder</h2><small>ค้นหาเส้นทางด้วย BFS</small></div></div>
+    <label>จุดเริ่มต้น<select id="from"></select></label>
+    <label>จุดปลายทาง<select id="to"></select></label>
+    <button class="btn full" onclick="findPath()">ค้นหาเส้นทาง <span>→</span></button>
+    <div id="pathResult" class="path-result"><span class="muted">เลือก Vertex เพื่อค้นหาเส้นทาง</span></div>
+    <div class="mini-info"><span>GRAPH</span><b>G = (V, E)</b></div>
+  </div>
+</div>
+
+<section class="graph-explain">
+  <div class="explain-card"><span class="explain-num">01</span><div><b>Vertex</b><p>หมวดสินค้า 8 จุด เช่น Football, Jerseys, Boots, Ball และ Training</p></div></div>
+  <div class="explain-card"><span class="explain-num">02</span><div><b>Edge</b><p>เส้นเชื่อมแสดงความสัมพันธ์ระหว่างหมวดสินค้าในระบบ</p></div></div>
+  <div class="explain-card"><span class="explain-num">03</span><div><b>Path</b><p>ลำดับ Vertex ที่เดินตาม Edge ได้ เช่น Football → Boots → Accessories → Training</p></div></div>
+</section>
+
+<section class="theory">
+  <div class="section-head"><div><p class="eyebrow">JAVASCRIPT DATA</p><h2>Adjacency List</h2></div><span class="badge">Graph G = (V, E)</span></div>
+  <pre id="adjacency"></pre>
+</section>
+</main>
+<footer>Graph Theory • Vertex • Edge • Adjacency List • BFS Path • Weighted Graph</footer>
+<script src="app.js"></script><script>initGraph();</script>
+</body></html>

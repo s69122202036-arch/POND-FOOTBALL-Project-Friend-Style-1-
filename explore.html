@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>เลือกสินค้า | POND FOOTBALL</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav"><a class="brand" href="index.html"><span>⚽</span> POND FOOTBALL</a><nav>
+<a href="index.html">หน้าแรก</a><a class="active" href="explore.html">เลือกสินค้า</a><a href="graph.html">Football Graph</a><a href="cart.html">ตะกร้า <b id="cartCount">0</b></a></nav></header>
+<main class="page">
+<section class="page-title"><p class="eyebrow">TREE NAVIGATION</p><h1>เลือกสินค้าแบบลำดับชั้น</h1><p>ระบบใช้ Tree เพื่อจัดหมวดหมู่จาก Root → Category → Type → Product (Leaf)</p></section>
+<section class="tree-shop">
+  <div class="tree-box"><h3>Football Store Tree</h3><div id="tree"></div></div>
+  <div class="shop-results"><div class="result-head"><h2 id="resultTitle">สินค้าทั้งหมด</h2><span id="resultPath">Root</span></div><div id="products" class="product-grid"></div></div>
+</section>
+</main><footer>Tree: Root / Parent / Child / Leaf • Path ถูกสร้างจากการคลิกเลือกสินค้า</footer>
+<script src="app.js"></script><script>initExplore();</script>
+</body></html>
